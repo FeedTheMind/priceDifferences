@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width', initial-scale='1'>
+    <title>Price and Percentage Difference</title>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link href='https://fonts.googleapis.com/css?family=Neuton:400,800' rel='stylesheet'>
+    <link rel='stylesheet' href='css/main.css'>
+  </head>
+  <body>
+    <div class='wrap'>
+      
+      <header class='mainHeader'>
+        <h1>Prices and Percentages</h1>
+      </header>
+
+      <div class='mainWrapper'>
+        <section class='sectionOne'>
+          <!-- Find and place image(s) accordingly -->
+          <p>
+            There is one thing in life that everyone despises&#8212;<strong>taxes</strong>.
+            But there is something that takes the sting away: saving money.
+          </p>
+          <p>
+            From recycling aluminum cans to using coupons, saving money is possible. However,
+            sometimes people don't have the time (insert life's woes). Thankfully, this application will
+            save time, which will save you "moola," "bread," "cheddar," "lettuce"&#8212;money!
+          </p>
+          <p>
+            In the first field, insert the current price of a product you're eyeballing.
+            In the second field, increase or decrease its price, revealing how much "bacon"
+            you will save (or lose).
+          </p>
+          <h2>Enjoy!<sub class='anAside'> Spend responsibly.</sub></h2>
+          <div class='inputWrapper'>
+            <input type='button' id='clickClickBoom' class='styleButton' value='Click'>
+            <input type='text' name='originalValue' class='styleInput inputResult' id='currentPrice' value='First'>
+            <input type='text' name='newValue' class='styleInput inputResult' id='newPrice' value='Second'>
+          </div>
+          <div id='output'></div>
+        </section>
+      </div>
+
+    </div>
+    <footer>&copy; 2016</footer>
+    <script src='app.js'></script>
+  </body>
+</html>

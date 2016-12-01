@@ -1,0 +1,140 @@
+/****************
+General
+****************/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, sans-serif;
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/****************
+Heading
+****************/
+.mainHeader {
+  font-family: 'Neuton';
+  text-align: center;
+}
+
+/****************
+.mainWrapper
+*****************/
+.mainWrapper {
+  padding-bottom: 5px;
+}
+
+.sectionOne {
+  padding: 4px 8px;
+}
+
+.styleButton {
+  padding: 2px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  font-family: Georgia;
+}
+
+.styleInput {
+  padding: 2px;
+  width: 100px;
+  border-radius: 10px;
+  font-family: Georgia;
+  outline: none;
+}
+
+#output {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/****************
+.anAside
+****************/
+.anAside {
+  font-size: .375em;
+}
+
+/****************
+footer
+****************/
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/****************
+Colors
+****************/
+body {
+  background: #b3b3cc; /* Fallback for older browsers */
+  background: linear-gradient(to left, #61456A, #9494b8);
+  color: #000;
+}
+
+.mainHeader {
+  background: rgba(97, 69, 106, 0.2);
+  border-top: 1px solid #1A1A56;
+  border-bottom: 1px solid #1A1A56;
+}
+
+.mainWrapper {
+  background: rgba(211, 211, 211, .5);
+}
+
+.styleButton {
+  background: lightgreen;
+  color: rgb(13, 13, 13);
+}
+
+.styleInput { background: lightgray; }
+
+/* Set outline to "none", but add solid border for better visual aid */
+.styleButton:hover,
+.styleButton:focus,
+.styleInput:focus {
+  border: 3px solid #50394c;
+}
+
+footer {
+  background: #61456A;
+  color: #999;
+}
+
+/****************
+Queries
+****************/
+@media(min-width: 769px) {
+  /* CSS function to "stick" footer; also,
+  this works well with a fixed height */
+  .wrap  {
+    min-height: calc(100vh - 38px);
+  }
+
+  .mainWrapper {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+
+  .styleInput {
+    display: inline-block;
+    padding: 4px;
+    margin-left: 5px;
+  }
+
+  .mainHeader {
+    font-size: 1.2em;
+  }
+}
